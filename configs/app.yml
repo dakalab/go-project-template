@@ -1,0 +1,13 @@
+application:
+  domain: http://localhost
+  http_port: 8080
+  grpc_port: 9090
+database:
+  host: localhost
+  port: 3306
+  username: u
+  password: p
+  database: d
+  max_idle_conns: 2
+  max_open_conns: 16
+  conn_max_life_time: 60s
