@@ -29,7 +29,7 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initLogger, initConfig)
 
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "./configs/app.yml", "config file")
+	rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", "./configs/app.yml", "config file")
 
 	rootCmd.AddCommand(versionCmd)
 }
